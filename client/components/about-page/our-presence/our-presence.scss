@@ -1,0 +1,71 @@
+.ourPresence {
+  grid-column: center-start / center-end;
+  justify-self: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  border-radius: 8px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: -1px 0px 29px 0px rgba(184, 184, 184, 0.22);
+  -webkit-box-shadow: -1px 0px 29px 0px rgba(184, 184, 184, 0.22);
+  -moz-box-shadow: -1px 0px 29px 0px rgba(184, 184, 184, 0.22);
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.mapbox-map {
+  border-radius: 8px;
+  width: 73rem;
+  height: 50rem;
+}
+.locations {
+  padding: 1rem;
+  width: 25rem;
+  &-searchBox {
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+    input {
+      width: 100%;
+      border: 1px solid #dedfdf;
+      padding-left: 1rem;
+      font-size: 1.4rem;
+      text-align: center;
+      border-radius: 4px;
+    }
+    input::placeholder {
+      color: #dedfdf;
+    }
+    input:focus::placeholder {
+      color: transparent;
+    }
+    input:focus {
+      outline: none;
+    }
+  }
+  &-listings {
+    display: grid;
+
+    justify-content: start;
+    align-content: start;
+    margin-top: 1rem;
+    font-family: var(--text-fonts);
+    height: 40rem;
+    overflow: auto;
+    row-gap: 0.3rem;
+
+    div {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 1.7rem;
+      padding: 0.5rem;
+      transition: background-color 0.4;
+      height: 3.5rem;
+      width: 100%;
+    }
+    div:hover {
+      background-color: #f4f4f4;
+    }
+  }
+}

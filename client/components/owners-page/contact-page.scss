@@ -1,0 +1,108 @@
+.contact-page {
+  background-image: url('https://images.unsplash.com/photo-1490093158370-1a6be674437b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2116&q=80');
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  &-container {
+    transform: translateX(-5rem);
+    opacity: 0;
+    width: 70rem;
+    height: 45rem;
+    background-color: white;
+    display: flex;
+
+    &_text {
+      width: 25rem;
+      background-color: #f7f7f7;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    &_form {
+      width: 45rem;
+      display: grid;
+      grid-auto-flow: row;
+      justify-content: center;
+      align-content: flex-start;
+      row-gap: 2rem;
+      margin-top: 2rem;
+
+      &-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+.duble_input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    font-family: var(--text-fonts);
+    font-size: 1.4rem;
+    width: 15rem;
+    height: 4rem;
+    border: none;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  input::placeholder {
+    color: #bbbbbb;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
+.single_input {
+  input {
+    font-size: 1.4rem;
+    width: 34rem;
+    height: 4rem;
+    border: none;
+    border-bottom: 1px solid #f1f1f1;
+    font-family: var(--text-fonts);
+  }
+  input:focus {
+    outline: none;
+  }
+  input::placeholder {
+    color: #bbbbbb;
+  }
+}
+
+.contacts_areatext {
+  margin-top: 1rem;
+  border: none;
+  border-bottom: 1px solid #f1f1f1;
+  font-family: 'Rubik', sans-serif;
+}
+.contacts_areatext:focus {
+  outline: none;
+}
+.contacts_areatext::placeholder {
+  font-family: 'Rubik', sans-serif;
+  color: #bbbbbb;
+}
+
+.contact-page--title,
+.contact-page--rest {
+  font-weight: 200;
+  font-size: 1.3rem;
+  width: 21rem;
+}
+
+.contact-page--title {
+  margin-bottom: 2rem;
+  &--main {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+}
+.contact-page--rest {
+  margin-bottom: 2rem;
+}
